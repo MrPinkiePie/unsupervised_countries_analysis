@@ -1,15 +1,21 @@
 # 🌍 Global Socio-Economic Segmentation: Cluster Analysis
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1VG8JHd2mPNQBxCjI-hmyh3qijqsU2nLF?usp=sharing)
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Scikit-Learn](https://img.shields.io/badge/Library-Scikit--Learn-orange)
 ![Pandas](https://img.shields.io/badge/Library-Pandas-150458)
-![Status](https://img.shields.io/badge/Status-In%20Progress-yellow)
+![Status](https://img.shields.io/badge/Status-Completed-green)
 
 ## 📋 Descripción del Proyecto
 
 Este proyecto aplica técnicas de **Aprendizaje No Supervisado (Unsupervised Learning)** para categorizar países basándose en indicadores socioeconómicos y de salud. 
 
 Simulando un escenario de negocio para una entidad como el **Banco Mundial** u organizaciones no gubernamentales (ONGs), el objetivo es identificar grupos de países (clusters) con características similares para determinar la asignación estratégica de fondos y ayudas internacionales. A diferencia de los enfoques tradicionales, este modelo no utiliza etiquetas predefinidas, sino que descubre patrones latentes en los datos macroeconómicos.
+
+## 🔗 Acceso al Código
+
+Puedes visualizar y ejecutar el análisis completo directamente en el navegador a través del siguiente enlace:
+👉 **[Ver Notebook Interactivo en Google Colab](https://colab.research.google.com/drive/1VG8JHd2mPNQBxCjI-hmyh3qijqsU2nLF?usp=sharing)**
 
 ## 🎯 Objetivo del Negocio
 
@@ -39,19 +45,19 @@ El conjunto de datos proviene de [Kaggle: Unsupervised Learning on Country Data]
 El proyecto sigue un flujo de trabajo riguroso de Data Science:
 
 1.  **Análisis Exploratorio de Datos (EDA):** Análisis univariado y bivariado, detección de outliers y mapas de calor de correlación.
-2.  **Preprocesamiento:** Estandarización de datos utilizando `StandardScaler` para mitigar el sesgo de varianza entre variables (ej. Inflación vs PIB).
-3.  **Reducción de Dimensionalidad (PCA):** Aplicación de Análisis de Componentes Principales para reducir el espacio dimensional y visualizar patrones en 2D/3D.
+2.  **Preprocesamiento:** Estandarización de datos utilizando `StandardScaler` y transformación Logarítmica para mitigar el sesgo en variables económicas (Income, GDPP).
+3.  **Reducción de Dimensionalidad (PCA):** Aplicación de Análisis de Componentes Principales para reducir el espacio dimensional y visualizar patrones en 2D.
 4.  **Modelado (Clustering):**
     * Determinación del número óptimo de clusters ($k$) mediante el **Método del Codo (Elbow Method)** y **Silhouette Score**.
     * Implementación del algoritmo **K-Means**.
-5.  **Interpretación Económica:** Análisis de los perfiles resultantes (Profiling) para etiquetar los clusters según su realidad económica.
+5.  **Interpretación Económica:** Análisis de los perfiles resultantes (Profiling) mediante Boxplots para etiquetar los clusters según su realidad económica.
 
 ## 🛠 Herramientas Utilizadas
 
 * **Lenguaje:** Python
 * **Manipulación de Datos:** Pandas, NumPy
+* **Machine Learning:** Scikit-Learn (KMeans, PCA, StandardScaler)
 * **Visualización:** Matplotlib, Seaborn
-* **Machine Learning:** Scikit-learn (KMeans, PCA, StandardScaler)
 
 ---
 *Autor: Luis Mauricio Aguirre Stornaiuolo*
